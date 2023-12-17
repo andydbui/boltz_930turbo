@@ -4,11 +4,9 @@ IG_UI_EN = {
 	IGUI_VehiclePart930turboFrontBumper = "FrontBumper",
 	IGUI_VehiclePart930turboRearBumper = "RearBumper",
 
-	IGUI_VehiclePart930turboWindshieldArmor = "Windshield Armor",
-	IGUI_VehiclePart930turboWindshieldRearArmor = "Rear Windshield Armor",
-	IGUI_VehiclePart930turboWindowLeftArmor = "Front Left Window Armor",
-	IGUI_VehiclePart930turboWindowRightArmor = "Front Right Window Armor",
+	IGUI_VehiclePart930turboFrontBullbar = "Front Bullbar",
+	IGUI_VehiclePart930turboRearBullbar = "Rear Bullbar",
+	IGUI_VehiclePart930turboRoofRack = "Roofrack",
 
 	IGUI_VehiclePart930turboTrunk = "Trunk Storage",
-	IGUI_VehiclePart930turbo0Roofrack = "Roofrack",
 }

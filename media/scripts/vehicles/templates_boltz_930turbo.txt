@@ -1,0 +1,173 @@
+module Base
+{
+    template vehicle boltz_930turbo_FrontBullbar
+    {
+        part boltz_930turbo_FrontBullbar
+        {
+            area = Engine,
+            category = bodywork,
+            specificItem = false,
+            itemType = Base.boltz_930Turbo_FrontBullbar,
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+
+                time = 180,
+                test = Vehicles.InstallTest.Default,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+
+                time = 180,
+                test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+
+    template vehicle boltz_930Turbo_RearBullbar
+    {
+        part boltz_930turbo_RearBullbar
+        {
+            area = TruckBed,
+            category = bodywork,
+            specificItem = false,
+            itemType = Base.boltz_930Turbo_RearBullbar,
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+
+                time = 180,
+                test = Vehicles.InstallTest.Default,
+            }
+        }
+    }
+
+    template vehicle boltz_930turbo_Roofrack
+    {
+        part boltz_930turbo_Roofrack
+        {
+            area = TruckBed,
+            category = bodywork,
+            itemType = Base.boltz_930turbo_RoofRack,
+            MechanicRequireKey = false,
+            specificItem = true,
+
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+
+                time = 200,
+                test = Vehicles.InstallTest.Default,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+
+                time = 200,
+                test = Vehicles.UninstallTest.Default,
+            }
+
+            container
+            {
+                conditionAffectsCapacity = false,
+                test = Vehicles.ContainerAccess.TruckBed,
+            }
+        }
+    }
+
+    template vehicle boltz_930turboAddons
+    {
+        template! = boltz_930turbo_FrontBullbar,
+
+        part boltz_930Turbo_FrontBullbar
+        {
+            table install
+            {
+                test = Vehicles.InstallTest.boltz_930turboRequirements,
+            }
+
+            table uninstall
+            {
+                test = Vehicles.InstallTest.boltz_930turboUninstall,
+            }
+
+            model Default
+            {
+                file = boltz_930turbo_FrontBullbar,
+            }
+        }
+
+        template! = boltz_930turbo_RearBullbar,
+
+        part boltz_930TurboRear_Bullbar
+        {
+            model Default
+            {
+                file = boltz_930turbo_RearBullbar,
+            }
+        }
+
+        template! = boltz_930turbo_Roofrack,
+
+        part boltz_930Turbo_Roofrack
+        {
+            model Default
+            {
+                file = boltz_930turbo_Roofrack,
+            }
+        }
+    }
+
+}

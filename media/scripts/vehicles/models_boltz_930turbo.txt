@@ -1,0 +1,181 @@
+module Base
+{
+    model boltz_930turbo_Base
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_Hood
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_Hood,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_FrontWindshield
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FrontWindshield,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47
+    }
+
+    model boltz_930turbo_RearWindshield
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_RearWindshield,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47
+    }
+
+    model boltz_930turbo_Trunk
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_Trunk
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_LeftDoor
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_LeftDoor,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_RightDoor
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_RightDoor,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_FLWindow
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FLWindow,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_FRWindow
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FRWindow,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_RLWindow
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_RLWindow,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_RRWindow
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_RRWindow,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_FLSeat
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FLSeat,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle_noreflect,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_FRSeat
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FRSeat,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle_noreflect,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_Exhaust
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_Exhaust,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_FrontBullbar
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FrontBullbar,
+        texture = Vehicles/vehicles_boltz_930turbo_addons,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_RearBullbar
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_RearBullbar,
+        texture = Vehicles/vehicles_boltz_930turbo_addons,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47,
+    }
+
+    model boltz_930turbo_FrontBumper
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FrontBumper,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47
+    }
+
+    model boltz_930turbo_RearBumper
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_RearBumper,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        shader = vehicle,
+        invertX = FALSE,
+        scale = 0.47
+    }
+
+    model boltz_930turbo_Roofrack
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_Roofrack
+        texture = Vehicles/vehicles_boltz_930turbo_addons,
+        shader = vehicle_noreflect,
+        invertX = FALSE,
+        scale = 0.47
+    }
+
+    model boltz_930turbo_Wheel
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_Wheel,
+        texture = vehicles/vehicles_boltz_930turbo_Wheel,
+        shader = vehiclewheel,
+        scale = 0.47,
+    }
+
+}
