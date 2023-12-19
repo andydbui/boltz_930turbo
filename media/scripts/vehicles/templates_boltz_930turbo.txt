@@ -1,173 +1,146 @@
 module Base
 {
-    template vehicle boltz_930turbo_FrontBullbar
+    model boltz_930turbo_Trunk
     {
-        part boltz_930turbo_FrontBullbar
+        mesh = vehicles/vehicle_boltz_930turbo_Trunk,
+        shader = vehicle,
+    }
+
+    model boltz_930turbo_FrontBumper
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_FrontBumper,
+        shader = vehicle,
+    }
+
+    template vehicle boltz_930turbo_Trunk
+    {
+        part TrunkDoor
         {
-            area = Engine,
-            category = bodywork,
-            specificItem = false,
-            itemType = Base.boltz_930Turbo_FrontBullbar,
-            mechanicRequireKey = false,
-
-            table install
+            model TrunkDoor
             {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-                        equip = primary,
-                    }
-                }
-
-                time = 180,
-                test = Vehicles.InstallTest.Default,
+                file = boltz_930turbo_Trunk,
             }
+			anim Open
+			{
+				sound = VehicleTrunkOpenSportsCar,
+				anim = TrunkOpening,
+				rate = 0.5,
+			}
 
-            table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-                        equip = primary,
-                    }
-                }
+			anim Close
+			{
+				sound = VehicleTrunkCloseSportsCar,
+				anim = TrunkOpening,
+				reverse = TRUE,
+				rate = 0.85,
+			}
 
-                time = 180,
-                test = Vehicles.UninstallTest.Default,
-            }
+			anim Closed
+			{
+				anim = TrunkOpening,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkOpening,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Lock
+			{
+				sound = LockVehicleDoorSportsCar,
+			}
+
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorSportsCar,
+			}
+
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedSportsCar,
+			}
+            itemType = Base.boltz_930turbo_Trunk,
+
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
         }
     }
 
-    template vehicle boltz_930Turbo_RearBullbar
+    template vehicle boltz_930turbo_FrontBumper
     {
-        part boltz_930turbo_RearBullbar
+        part boltz_930turbo_FrontBumper
         {
-            area = TruckBed,
+            area = Truckbed,
             category = bodywork,
-            specificItem = false,
-            itemType = Base.boltz_930Turbo_RearBullbar,
-            mechanicRequireKey = false,
-
-            table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-                        equip = primary,
-                    }
-                }
-
-                time = 180,
-                test = Vehicles.InstallTest.Default,
-            }
-        }
-    }
-
-    template vehicle boltz_930turbo_Roofrack
-    {
-        part boltz_930turbo_Roofrack
-        {
-            area = TruckBed,
-            category = bodywork,
-            itemType = Base.boltz_930turbo_RoofRack,
-            MechanicRequireKey = false,
             specificItem = true,
+            itemType = Base.boltz_930turbo_FrontBumper,
+            mechanicRequireKey = false,
+            repairMechanic = true,
 
             table install
             {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-                        equip = primary,
-                    }
-                }
-
-                time = 200,
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+                time = 300,
                 test = Vehicles.InstallTest.Default,
             }
-
-            table uninstall
+            table uninstall 
             {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-                        equip = primary,
-                    }
-                }
-
-                time = 200,
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+                time = 300,
                 test = Vehicles.UninstallTest.Default,
             }
-
-            container
-            {
-                conditionAffectsCapacity = false,
-                test = Vehicles.ContainerAccess.TruckBed,
+            lua {
+                create = Vehicles.Create.Default
             }
         }
     }
 
-    template vehicle boltz_930turboAddons
+    template vehicle boltz_930turbo_Addons
     {
-        template! = boltz_930turbo_FrontBullbar,
+        template! = boltz_930turbo_FrontBumper,
 
-        part boltz_930Turbo_FrontBullbar
+        part boltz_930turbo_FrontBumper
         {
-            table install
-            {
-                test = Vehicles.InstallTest.boltz_930turboRequirements,
-            }
-
             table uninstall
             {
-                test = Vehicles.InstallTest.boltz_930turboUninstall,
+                requireUninstalled = EngineDoor,
+
+                test = Vehicles.UninstallTest.boltz_930turbo_Uninstall2,
             }
 
             model Default
             {
-                file = boltz_930turbo_FrontBullbar,
-            }
-        }
-
-        template! = boltz_930turbo_RearBullbar,
-
-        part boltz_930TurboRear_Bullbar
-        {
-            model Default
-            {
-                file = boltz_930turbo_RearBullbar,
-            }
-        }
-
-        template! = boltz_930turbo_Roofrack,
-
-        part boltz_930Turbo_Roofrack
-        {
-            model Default
-            {
-                file = boltz_930turbo_Roofrack,
+                file = boltz_930turbo_FrontBumper,
+                scale = 0.47,
             }
         }
     }
-
 }

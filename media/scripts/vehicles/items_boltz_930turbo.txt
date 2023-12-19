@@ -1,62 +1,23 @@
 module Base
 {
-    model boltz_930Turbo_FrontBullbar
+    model boltz_930turbo_FrontBumper
     {
-        mesh = vehicles/vehicle_boltz_930turbo_FrontBullbar,
-        texture = Vehicles/vehicles_boltz_930turbo_addons,
-        shader = basicEffect,
-        invertX = FALSE,
-    }
-    model boltz_930Turbo_RearBullbar
-    {
-        mesh = vehicles/vehicle_boltz_930turbo_RearBullbar,
-        texture = Vehicles/vehicles_boltz_930turbo_addons,
+        mesh = vehicles/vehicle_boltz_930turbo_FrontBumper
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
         shader = basicEffect,
         invertX = FALSE,
     }
 
-    model boltz_930Turbo_Roofrack
-    {
-        mesh = vehicles/vehicle_boltz_930turbo_Roofrack,
-        texture = Vehicles/vehicles_boltz_930turbo_addons,
-        shader = basicEffect,
-        invertX = FALSE,
-    }
-
-    item boltz_930Turbo_FrontBullbar
+    item boltz_930turbo_FrontBumper3
     {
         DisplayCategory = VehicleMaintenance,
         ConditionMax = 100,
         Weight = 10.0,
         Type = Normal,
-        DisplayName = 911 Turbo Front Bullbar,
-        Icon = boltz_930turbo_FrontBullbar,
-        MetalValue = 10,
-    }
-
-    item boltz_930Turbo_RearBullbar
-    {
-        DisplayCategory = VehicleMaintenance,
-        ConditionMax = 100,
-        Weight = 10.0,
-        Type = Normal,
-        DisplayName = 911 Turbo Rear Bullbar,
-        Icon = boltz_930turbo_RearBullbar,
-        MetalValue = 10,
-    }
-
-    item boltz_930Turbo_Roofrack
-    {
-        DisplayCategory = VehicleMaintenance,
-        ConditionMax = 100,
-        Weight = 15.0,
-        Type = Normal,
-        DisplayName = 911 Turbo Roofrack,
-        Icon = boltz_930turbo_Roofrack,
+        DisplayName = 911 Turbo Front Bumper,
+        MetalValue = 25,
         VehicleType = 3,
-        MaxCapacity = 75,
-        ChanceToSpawnDamaged = 0,
         MechanicsItem = TRUE,
-        WorldStaticModel = boltz_930turbo_Roofrack_WM
+        WorldStaticModel = boltz_930turbo_FrontBumper,
     }
 }

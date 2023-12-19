@@ -3,6 +3,7 @@ module Base
     model boltz_930turbo_Base
     {
         mesh = vehicles/vehicle_boltz_930turbo_Base,
+        texture = Vehicles/vehicles_boltz_930turbo_Base,
         shader = vehicle,
         invertX = FALSE,
         scale = 0.47,
@@ -23,7 +24,7 @@ module Base
         texture = Vehicles/vehicles_boltz_930turbo_Base,
         shader = vehicle,
         invertX = FALSE,
-        scale = 0.47
+        scale = 0.47,
     }
 
     model boltz_930turbo_RearWindshield
@@ -32,7 +33,7 @@ module Base
         texture = Vehicles/vehicles_boltz_930turbo_Base,
         shader = vehicle,
         invertX = FALSE,
-        scale = 0.47
+        scale = 0.47,
     }
 
     model boltz_930turbo_Trunk
@@ -125,47 +126,11 @@ module Base
         scale = 0.47,
     }
 
-    model boltz_930turbo_FrontBullbar
-    {
-        mesh = vehicles/vehicle_boltz_930turbo_FrontBullbar,
-        texture = Vehicles/vehicles_boltz_930turbo_addons,
-        shader = vehicle,
-        invertX = FALSE,
-        scale = 0.47,
-    }
-
-    model boltz_930turbo_RearBullbar
-    {
-        mesh = vehicles/vehicle_boltz_930turbo_RearBullbar,
-        texture = Vehicles/vehicles_boltz_930turbo_addons,
-        shader = vehicle,
-        invertX = FALSE,
-        scale = 0.47,
-    }
-
     model boltz_930turbo_FrontBumper
     {
         mesh = vehicles/vehicle_boltz_930turbo_FrontBumper,
         texture = Vehicles/vehicles_boltz_930turbo_Base,
         shader = vehicle,
-        invertX = FALSE,
-        scale = 0.47
-    }
-
-    model boltz_930turbo_RearBumper
-    {
-        mesh = vehicles/vehicle_boltz_930turbo_RearBumper,
-        texture = Vehicles/vehicles_boltz_930turbo_Base,
-        shader = vehicle,
-        invertX = FALSE,
-        scale = 0.47
-    }
-
-    model boltz_930turbo_Roofrack
-    {
-        mesh = vehicles/vehicle_boltz_930turbo_Roofrack
-        texture = Vehicles/vehicles_boltz_930turbo_addons,
-        shader = vehicle_noreflect,
         invertX = FALSE,
         scale = 0.47
     }
