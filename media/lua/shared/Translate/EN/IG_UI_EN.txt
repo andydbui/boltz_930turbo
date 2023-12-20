@@ -1,7 +1,7 @@
 IG_UI_EN = {
 	IGUI_VehicleNameboltz_930turbo = "'75 Porsche 930 911 Turbo",
 
-	IGUI_VehiclePartboltz_930turbo_FrontBumper = "Front Bumper",
-	IGUI_Vehicle_CondInfoboltz_930turbo_FrontBumper = "Protects the hood",
+	IGUI_VehiclePartFrontBumper = "Front Bumper",
+	IGUI_VehiclePartRearBumper = "Rear Bumper",
 	IGUI_VehiclePart930turboTrunk = "Trunk Storage",
 }

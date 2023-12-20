@@ -1,23 +1,48 @@
 module Base
 {
-    model boltz_930turbo_FrontBumper
+    model FrontBumperWM
     {
-        mesh = vehicles/vehicle_boltz_930turbo_FrontBumper
-        texture = Vehicles/vehicles_boltz_930turbo_Base,
+        mesh = vehicles/vehicle_boltz_930turbo_FrontBumperWM,
+        texture = Vehicles/vehicles_boltz_930turbo_WM,
         shader = basicEffect,
         invertX = FALSE,
+        scale = 0.52,
     }
 
-    item boltz_930turbo_FrontBumper3
+    model RearBumperWM
+    {
+        mesh = vehicles/vehicle_boltz_930turbo_RearBumperWM,
+        texture = Vehicles/vehicles_boltz_930turbo_WM,
+        shader = basicEffect,
+        invertX = FALSE,
+        scale = 0.52,
+    }
+
+    item FrontBumper3
     {
         DisplayCategory = VehicleMaintenance,
         ConditionMax = 100,
         Weight = 10.0,
         Type = Normal,
         DisplayName = 911 Turbo Front Bumper,
+        Icon = boltz_930turbo_placeholder,
         MetalValue = 25,
         VehicleType = 3,
         MechanicsItem = TRUE,
-        WorldStaticModel = boltz_930turbo_FrontBumper,
+        WorldStaticModel = FrontBumperWM,
+    }
+
+    item RearBumper3
+    {
+        DisplayCategory = VehicleMaintenance,
+        ConditionMax = 100,
+        Weight = 10.0,
+        Type = Normal,
+        DisplayName = 911 Turbo Rear Bumper,
+        Icon = boltz_930turbo_placeholder,
+        MetalValue = 25,
+        VehicleType = 3,
+        MechanicsItem = TRUE,
+        WorldStaticModel = RearBumperWM,
     }
 }

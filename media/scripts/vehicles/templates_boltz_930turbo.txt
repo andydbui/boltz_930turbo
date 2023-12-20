@@ -6,12 +6,6 @@ module Base
         shader = vehicle,
     }
 
-    model boltz_930turbo_FrontBumper
-    {
-        mesh = vehicles/vehicle_boltz_930turbo_FrontBumper,
-        shader = vehicle,
-    }
-
     template vehicle boltz_930turbo_Trunk
     {
         part TrunkDoor
@@ -73,74 +67,6 @@ module Base
 			{
 				recipes = Advanced Mechanics,
 			}
-        }
-    }
-
-    template vehicle boltz_930turbo_FrontBumper
-    {
-        part boltz_930turbo_FrontBumper
-        {
-            area = Truckbed,
-            category = bodywork,
-            specificItem = true,
-            itemType = Base.boltz_930turbo_FrontBumper,
-            mechanicRequireKey = false,
-            repairMechanic = true,
-
-            table install
-            {
-				items
-				{
-					1
-					{
-						type = Base.Screwdriver,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-                time = 300,
-                test = Vehicles.InstallTest.Default,
-            }
-            table uninstall 
-            {
-				items
-				{
-					1
-					{
-						type = Base.Screwdriver,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-                time = 300,
-                test = Vehicles.UninstallTest.Default,
-            }
-            lua {
-                create = Vehicles.Create.Default
-            }
-        }
-    }
-
-    template vehicle boltz_930turbo_Addons
-    {
-        template! = boltz_930turbo_FrontBumper,
-
-        part boltz_930turbo_FrontBumper
-        {
-            table uninstall
-            {
-                requireUninstalled = EngineDoor,
-
-                test = Vehicles.UninstallTest.boltz_930turbo_Uninstall2,
-            }
-
-            model Default
-            {
-                file = boltz_930turbo_FrontBumper,
-                scale = 0.47,
-            }
         }
     }
 }
