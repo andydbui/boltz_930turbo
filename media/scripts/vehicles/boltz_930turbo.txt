@@ -11,7 +11,7 @@ module Base
 		{
 			file = boltz_930turbo_Base,
 			scale = 1.7000,
-			offset = 0.0000 0.0182 0.0303,
+			offset = 0.0000 0.0176 0.0294,
 			shader = vehicle,
 		}
 
@@ -54,6 +54,7 @@ module Base
 		textureDamage1Shell = Vehicles/vehicles_boltz_930turbo_damagenull,
 		textureDamage2Shell = Vehicles/vehicles_boltz_930turbo_damagenull,
 		textureRust = Vehicles/vehiclse_boltz_930turbo_rust,
+		textureShadow = Vehicles/vehicles_boltz_930turbo_shadow,
 
 		sound
 		{
@@ -64,11 +65,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 1.0667 0.8485 2.2667,
+		extents = 1.0706 0.8471 2.2706,
 		mass = 820,
-		physicsChassisShape = 1.0424 0.5455 2.2545,
+		physicsChassisShape = 1.0471 0.5529 2.2588,
 		centerOfMassOffset = 0.0000 0.4000 0.0000,
-		shadowExtents = 1.0353 2.2343,
+		shadowExtents = 2.8765 2.6402,
 		shadowOffset = 0.0000 0.0000,
 		engineForce = 5000,
 		engineLoudness = 80,
@@ -92,7 +93,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.4182 0.1455 0.6667,
+			offset = 0.4176 0.1471 0.6647,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -100,7 +101,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.4182 0.1455 0.6606,
+			offset = -0.4176 0.1471 0.6588,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -108,7 +109,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.4364 0.1455 -0.6242,
+			offset = 0.4353 0.1471 -0.6235,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -116,7 +117,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.4364 0.1455 -0.6242,
+			offset = -0.4353 0.1471 -0.6235,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -129,13 +130,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.1879 0.2364 -0.1879,
+				offset = 0.1882 0.2353 -0.1882,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 0.6000 -0.2545 0.0061,
+				offset = 0.6000 -0.2529 0.0059,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -147,13 +148,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.1879 0.2909 -0.1818,
+				offset = -0.1882 0.2882 -0.1824,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -0.6000 -0.2545 0.0061,
+				offset = -0.6000 -0.2529 0.0059,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -161,47 +162,47 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 -1.4606 0.9697 0.5939,
+			xywh = 0.0000 -1.4588 0.9765 0.6000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 1.4485 0.9697 0.5455,
+			xywh = 0.0118 1.5471 1.2706 0.7294,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 0.8182 0.0848 0.4727 0.4727,
+			xywh = 0.8176 0.0824 0.4706 0.4706,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -0.8121 0.0788 0.4727 0.4727,
+			xywh = -0.8118 0.0765 0.4706 0.4706,
 		}
 
 		area GasTank
 		{
-			xywh = 0.7212 -0.5333 0.2909 0.2909,
+			xywh = 0.7235 -0.5353 0.2941 0.2941,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 0.7091 0.6788 0.2909 0.2909,
+			xywh = 0.7118 0.6765 0.2941 0.2941,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -0.7091 0.6909 0.2909 0.2909,
+			xywh = -0.7118 0.6882 0.2941 0.2941,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 0.7212 -0.6061 0.2909 0.2909,
+			xywh = 0.7235 -0.6059 0.2941 0.2941,
 		}
 
 		area TireRearRight
 		{
-			xywh = -0.7091 -0.6061 0.2909 0.2909,
+			xywh = -0.7118 -0.6059 0.2941 0.2941,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -221,33 +222,32 @@ module Base
 			model Default
 			{
 				file = boltz_930turbo_Trunk,
-				scale = 0.47,
 			}
 
 			anim Open
 			{
 				sound = VehicleTrunkOpenSportsCar,
-				anim = TrunkOpening,
-				rate = 0.5,
+				anim = DoorOpening,
+				rate = 1.0,
 			}
 
 			anim Close
 			{
 				sound = VehicleTrunkCloseSportsCar,
-				anim = TrunkOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
-				rate = 0.85,
+				rate = 1.5,
 			}
 
 			anim Closed
 			{
-				anim = TrunkOpening,
+				anim = DoorOpening,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = TrunkOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -275,6 +275,12 @@ module Base
 			table uninstall
 			{
 				recipes = Advanced Mechanics,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.TrunkDoor,
 			}
 		}
 
@@ -339,7 +345,8 @@ module Base
 			{
 				file = CarBattery,
 				scale = 0.85,
-				offset = 0.2358 0.0650 1.0307,
+				offset = -0.31 0.5 -95
+				,
 				rotate = 0.0000 90.0000 0.0000,
 			}
 		}
@@ -372,11 +379,10 @@ module Base
 		part FrontBumper
 		{
 			category = bodywork,
-
+			area = TruckBed,
 			model Default
 			{
 				file = boltz_930turbo_FrontBumper,
-				scale = 0.47,
 			}
 		}
 
@@ -385,7 +391,7 @@ module Base
 		part RearBumper
 		{
 			category = bodywork,
-
+			area = Engine,
 			model Default
 			{
 				file = boltz_930turbo_RearBumper,
@@ -399,27 +405,27 @@ module Base
 			anim Open
 			{
 				sound = VehicleHoodOpenSportsCar,
-				anim = HoodOpening,
+				anim = DoorOpening,
 				rate = 1.5,
 			}
 
 			anim Close
 			{
 				sound = VehicleHoodCloseSportsCar,
-				anim = HoodOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
 				rate = 4.0,
 			}
 
 			anim Closed
 			{
-				anim = HoodOpening,
+				anim = DoorOpening,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = HoodOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -437,6 +443,12 @@ module Base
 			model Default
 			{
 				file = boltz_930turbo_Hood,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.EngineDoor,
 			}
 		}
 
@@ -464,6 +476,7 @@ module Base
 
 		part Windshield
 		{
+			area = TruckBed,
 			model Default
 			{
 				file = boltz_930turbo_FrontWindshield,
@@ -475,6 +488,7 @@ module Base
 
 		part WindshieldRear
 		{
+			area = Engine,
 			model Default
 			{
 				file = boltz_930turbo_RearWindshield,
@@ -598,7 +612,7 @@ module Base
 			anim Close
 			{
 				sound = VehicleDoorCloseSportsCar,
-				anim = FLDoorOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
 				rate = 1.0,
 			}
@@ -606,21 +620,41 @@ module Base
 			anim Open
 			{
 				sound = VehicleDoorOpenSportsCar,
-				anim = FLDoorOpening,
+				anim = DoorOpening,
 				rate = 0.8,
 			}
 
 			anim Opened
 			{
-				anim = FLDoorOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 180.0 0.0,
+			}
+
 			anim Closed
 			{
-				anim = FLDoorOpening,
+				anim = DoorOpening,
 				animate = FALSE,
+			}
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
 			}
 		}
 
@@ -634,7 +668,7 @@ module Base
 			anim Close
 			{
 				sound = VehicleDoorCloseSportsCar,
-				anim = FRDoorOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
 				rate = 1.0,
 			}
@@ -642,21 +676,42 @@ module Base
 			anim Open
 			{
 				sound = VehicleDoorOpenSportsCar,
-				anim = FRDoorOpening,
+				anim = DoorOpening,
 				rate = 0.8,
 			}
 
 			anim Opened
 			{
-				anim = FRDoorOpening,
+				anim = DoorOpening,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 
 			anim Closed
 			{
-				anim = FRDoorOpening,
+				anim = DoorOpening,
 				animate = FALSE,
+			}
+
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 180.0 0.0,
+			}
+			
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
 			}
 		}
 

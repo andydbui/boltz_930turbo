@@ -5,7 +5,7 @@ module Base
 		part FrontBumper
 		{
 			category = bodywork,
-			area = Truckbed,
+			area = TruckBed,
 			itemType = Base.FrontBumper,
 			mechanicRequireKey = false,
 			repairMechanic = true,
