@@ -4,7 +4,6 @@ GOD.loadedParts = GOD.loadedParts or {};
 GOD.partDefaultDebug = false;
 GOD.modDataDebug = false;
 
-
 function GOD:createVehicleConfig(rootNS)
 	for i, node in ipairs({"Init", "Create", "InstallComplete", "UninstallComplete", "CheckEngine", "ContainerAccess", "InstallTest", "UninstallTest", "Update", "Use"})
     do 

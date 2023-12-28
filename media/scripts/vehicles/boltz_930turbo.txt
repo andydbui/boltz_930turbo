@@ -147,8 +147,6 @@ module Base
 			width = 0.25f,
 		}
 
-		template = PassengerSeat4,
-
 		passenger FrontLeft
 		{
 			showPassenger = true,
@@ -266,8 +264,6 @@ module Base
 		template = 930Turbo_TrunkDoor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
 
 		part SeatFrontLeft
 		{
@@ -530,8 +526,6 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearLeft,
-		template = Door/part/DoorRearRight,
 
 		part DoorFrontLeft
 		{

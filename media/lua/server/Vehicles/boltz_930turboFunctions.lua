@@ -1,17 +1,5 @@
 require 'Vehicles/Vehicles';
 
-function Vehicles.Update.FrontBumper(vehicle, part)
-end
-
-function Vehicles.Init.FrontBumper(vehicle, part)
-end
-
-function Vehicles.Update.RearBumper(vehicle, part)
-end
-
-function Vehicles.Init.RearBumper(vehicle, part)
-end
-
 function Vehicles.UninstallTest.boltz_930turbo_Uninstall2(vehicle, part, chr)
 	if ISVehicleMechanics.cheat then return true; end
 	local keyvalues = part:getTable("uninstall")

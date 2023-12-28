@@ -1,4 +1,4 @@
-B930turbo = {
+B930t = {
     parts = {
         FrontBumper = {
             boltz_930FrontBumper = {
@@ -23,4 +23,4 @@ B930turbo = {
     },
 };
 
-GOD:createVehicleConfig(B930turbo);
+GOD:createVehicleConfig(B930t);
