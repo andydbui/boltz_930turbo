@@ -3,15 +3,15 @@ module Base
 	vehicle boltz_930turbo
 	{
 		mechanicType = 3,
-		offRoadEfficiency = 0.8,
+		offRoadEfficiency = 1.0,
 		engineRepairLevel = 6,
-		playerDamageProtection = 0.7,
+		playerDamageProtection = 1.25,
 
 		model
 		{
 			file = boltz_930turbo_Base,
-			scale = 1.7000,
-			offset = 0.0000 0.0176 0.0294,
+			scale = 1.6700,
+			offset = 0.0000 0.0299 0.0299,
 			shader = vehicle,
 		}
 
@@ -19,40 +19,65 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/vehicles_boltz_930turbo_Base,
+			texture = Vehicles/vehicles_boltz_930turbo_Base_BlackTan,
 		}
 
 		skin
 		{
-			texture = Vehicles/vehicles_boltz_930turbo_Base_GuardsRed,
+			texture = Vehicles/vehicles_boltz_930turbo_Base_BlackBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/vehicles_boltz_930turbo_Base_Black,
+			texture = Vehicles/vehicles_boltz_930turbo_Base_GuardsRedTan,
 		}
 
 		skin
 		{
-			texture = Vehicles/vehicles_boltz_930turbo_Base_CarreraWhite,
+			texture = Vehicles/vehicles_boltz_930turbo_Base_GuardsRedBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/vehicles_boltz_930turbo_Base_SkyBlueMetallic,
+			texture = Vehicles/vehicles_boltz_930turbo_Base_CarreraWhiteBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/vehicles_boltz_930turbo_Base_PewterMetallic,
+			texture = Vehicles/vehicles_boltz_930turbo_Base_CarreraWhiteTan,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicles_boltz_930turbo_Base_SkyBlueMetallicBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicles_boltz_930turbo_Base_SkyBlueMetallicTan,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicles_boltz_930turbo_Base_SeaGreenMetallicBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicles_boltz_930turbo_Base_SeaGreenMetallicTan,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicles_boltz_930turbo_Base_PewterMetallicBlack,
 		}
 
 		textureMask = Vehicles/vehicles_boltz_930turbo_mask,
 		textureLights = Vehicles/vehicles_boltz_930turbo_lights,
 		textureDamage1Overlay = Vehicles/vehicles_boltz_930turbo_damage01,
 		textureDamage2Overlay = Vehicles/vehicles_boltz_930turbo_damage02,
-		textureDamage1Shell = Vehicles/vehicles_boltz_930turbo_damagenull,
-		textureDamage2Shell = Vehicles/vehicles_boltz_930turbo_damagenull,
+		textureDamage1Shell = Vehicles/vehicles_boltz_930turbo_Base,
+		textureDamage2Shell = Vehicles/vehicles_boltz_930turbo_Base,
 		textureRust = Vehicles/vehiclse_boltz_930turbo_rust,
 		textureShadow = Vehicles/vehicles_boltz_930turbo_shadow,
 
@@ -65,35 +90,35 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 1.0706 0.8471 2.2706,
-		mass = 820,
-		physicsChassisShape = 1.0471 0.5529 2.2588,
-		centerOfMassOffset = 0.0000 0.4000 0.0000,
+		extents = 1.0778 0.8503 2.2874,
+		mass = 670,
+		physicsChassisShape = 1.0539 0.5629 2.2754,
+		centerOfMassOffset = 0.0000 0.4012 0.0000,
 		shadowExtents = 2.8765 2.6402,
 		shadowOffset = 0.0000 0.0000,
 		engineForce = 5000,
 		engineLoudness = 80,
-		engineQuality = 90,
-		maxSpeed = 100f,
+		engineQuality = 92,
+		maxSpeed = 110f,
 		gearRatioCount = 5,
-		stoppingMovementForce = 2.0f,
+		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.7f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 30,
-		suspensionCompression = 2.0,
-		suspensionDamping = 2.2,
-		maxSuspensionTravelCm = 15,
-		suspensionRestLength = 0.3f,
+		suspensionStiffness = 37,
+		suspensionCompression = 4.7,
+		suspensionDamping = 3.0,
+		maxSuspensionTravelCm = 18f,
+		suspensionRestLength = 0.2f,
 		wheelFriction = 1.8f,
-		frontEndHealth = 150,
-		rearEndHealth = 150,
+		frontEndHealth = 170,
+		rearEndHealth = 140,
 		seats = 2,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.4176 0.1471 0.6647,
+			offset = 0.4192 0.1497 0.6647,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -101,7 +126,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.4176 0.1471 0.6588,
+			offset = -0.4192 0.1497 0.6647,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -109,7 +134,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.4353 0.1471 -0.6235,
+			offset = 0.4371 0.1557 -0.6108,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -117,7 +142,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.4353 0.1471 -0.6235,
+			offset = -0.4431 0.1497 -0.6108,
 			radius = 0.15f,
 			width = 0.25f,
 		}
@@ -130,13 +155,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.1882 0.2353 -0.1882,
+				offset = 0.1856 0.2335 -0.1856,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 0.6000 -0.2529 0.0059,
+				offset = 0.5988 -0.2575 0.0060,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -148,13 +173,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.1882 0.2882 -0.1824,
+				offset = -0.1856 0.2934 -0.1796,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -0.6000 -0.2529 0.0059,
+				offset = -0.5988 -0.2575 0.0060,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -162,47 +187,70 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 -1.4588 0.9765 0.6000,
+			xywh = 0.0000 -1.4611 0.9820 0.6108,
+		}
+
+		area Front
+		{
+			xywh = 0.0000 1.5269 0.9820 0.6108,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0118 1.5471 1.2706 0.7294,
+			xywh = 0.0120 1.5449 1.2814 0.7305,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 0.8176 0.0824 0.4706 0.4706,
+			xywh = 0.8204 0.0838 0.4790 0.4790,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -0.8118 0.0765 0.4706 0.4706,
+			xywh = -0.8144 0.0778 0.4790 0.4790,
 		}
 
 		area GasTank
 		{
-			xywh = 0.7235 -0.5353 0.2941 0.2941,
+			xywh = 0.7186 -0.5329 0.3114 0.3114,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 0.7118 0.6765 0.2941 0.2941,
+			xywh = 0.7066 0.6766 0.3114 0.3114,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -0.7118 0.6882 0.2941 0.2941,
+			xywh = -0.7066 0.6886 0.3114 0.3114,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 0.7235 -0.6059 0.2941 0.2941,
+			xywh = 0.7186 -0.6048 0.3114 0.3114,
 		}
 
 		area TireRearRight
 		{
-			xywh = -0.7118 -0.6059 0.2941 0.2941,
+			xywh = -0.7066 -0.6048 0.3114 0.3114,
+		}
+
+		part GloveBox
+		{
+			area = SeatFrontRight,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+
+			container
+			{
+				capacity = 9,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 		}
 
 		template = Trunk/part/TruckBed,
@@ -215,75 +263,7 @@ module Base
 			}
 		}
 
-		template = TrunkDoor,
-
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = boltz_930turbo_Trunk,
-			}
-
-			anim Open
-			{
-				sound = VehicleTrunkOpenSportsCar,
-				anim = DoorOpening,
-				rate = 1.0,
-			}
-
-			anim Close
-			{
-				sound = VehicleTrunkCloseSportsCar,
-				anim = DoorOpening,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Closed
-			{
-				anim = DoorOpening,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = DoorOpening,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			anim Lock
-			{
-				sound = LockVehicleDoorSportsCar,
-			}
-
-			anim Unlock
-			{
-				sound = UnlockVehicleDoorSportsCar,
-			}
-
-			anim IsLocked
-			{
-				sound = VehicleDoorIsLockedSportsCar,
-			}
-
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-			lua
-			{
-				create = Vehicles.Create.TrunkDoor,
-				init = Vehicles.Init.Door,
-				use = Vehicles.Use.TrunkDoor,
-			}
-		}
-
+		template = 930Turbo_TrunkDoor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -345,8 +325,7 @@ module Base
 			{
 				file = CarBattery,
 				scale = 0.85,
-				offset = -0.31 0.5 -95
-				,
+				offset = -0.31 0.5 -95,
 				rotate = 0.0000 90.0000 0.0000,
 			}
 		}
@@ -379,7 +358,8 @@ module Base
 		part FrontBumper
 		{
 			category = bodywork,
-			area = TruckBed,
+			area = Front,
+
 			model Default
 			{
 				file = boltz_930turbo_FrontBumper,
@@ -392,65 +372,14 @@ module Base
 		{
 			category = bodywork,
 			area = Engine,
+
 			model Default
 			{
 				file = boltz_930turbo_RearBumper,
 			}
 		}
 
-		template = EngineDoor,
-
-		part EngineDoor
-		{
-			anim Open
-			{
-				sound = VehicleHoodOpenSportsCar,
-				anim = DoorOpening,
-				rate = 1.5,
-			}
-
-			anim Close
-			{
-				sound = VehicleHoodCloseSportsCar,
-				anim = DoorOpening,
-				reverse = TRUE,
-				rate = 4.0,
-			}
-
-			anim Closed
-			{
-				anim = DoorOpening,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = DoorOpening,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = boltz_930turbo_Hood,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-				init = Vehicles.Init.Door,
-				use = Vehicles.Use.EngineDoor,
-			}
-		}
+		template = 930Turbo_EngineDoor,
 
 		part Heater
 		{
@@ -477,6 +406,7 @@ module Base
 		part Windshield
 		{
 			area = TruckBed,
+
 			model Default
 			{
 				file = boltz_930turbo_FrontWindshield,
@@ -489,6 +419,7 @@ module Base
 		part WindshieldRear
 		{
 			area = Engine,
+
 			model Default
 			{
 				file = boltz_930turbo_RearWindshield,
@@ -650,6 +581,7 @@ module Base
 				anim = DoorOpening,
 				animate = FALSE,
 			}
+
 			lua
 			{
 				create = Vehicles.Create.Door,
@@ -706,7 +638,7 @@ module Base
 				rate = 0.3,
 				angle = 0.0 180.0 0.0,
 			}
-			
+
 			lua
 			{
 				create = Vehicles.Create.Door,

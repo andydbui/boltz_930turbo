@@ -3,9 +3,9 @@ module Base
 	template vehicle FrontBumper
 	{
 		part FrontBumper
-		{
+		{		
 			category = bodywork,
-			area = TruckBed,
+			area = Front,
 			itemType = Base.FrontBumper,
 			mechanicRequireKey = false,
 			repairMechanic = true,

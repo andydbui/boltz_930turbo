@@ -4,7 +4,7 @@ module Base
     {
         mesh = vehicles/vehicle_boltz_930turbo|boltz_930turbo_Base,
         texture = Vehicles/vehicles_boltz_930turbo_Base,
-        shader = vehicle,
+        shader = vehicle_noreflect,
         invertX = FALSE,
         scale = 0.47,
     }
@@ -13,7 +13,7 @@ module Base
     {
         mesh = vehicles/vehicle_boltz_930turbo|boltz_930turbo_engineDoor,
         texture = Vehicles/vehicles_boltz_930turbo_Base,
-        shader = vehicle,
+        shader = vehicle_noreflect,
         invertX = FALSE,
         static = FALSE,
         scale = 0.47,
@@ -42,7 +42,7 @@ module Base
     {
         mesh = vehicles/vehicle_boltz_930turbo|boltz_930turbo_TrunkLid,
         texture = Vehicles/vehicles_boltz_930turbo_Base,
-        shader = vehicle,
+        shader = vehicle_noreflect,
         invertX = FALSE,
         static = FALSE,
         scale = 0.47,
@@ -52,7 +52,7 @@ module Base
     model boltz_930turbo_LeftDoor
     {
         mesh = vehicles/vehicle_boltz_930turbo|boltz_930turbo_LeftDoor,
-        shader = vehicle,
+        shader = vehicle_noreflect,
         invertX = FALSE,
         static = FALSE,
         scale = 0.47,
@@ -62,7 +62,7 @@ module Base
     model boltz_930turbo_RightDoor
     {
         mesh = vehicles/vehicle_boltz_930turbo|boltz_930turbo_RightDoor,
-        shader = vehicle,
+        shader = vehicle_noreflect,
         invertX = FALSE,
         static = FALSE,
         scale = 0.47,

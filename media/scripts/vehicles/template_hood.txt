@@ -1,0 +1,94 @@
+module Base
+{
+    template vehicle 930Turbo_EngineDoor
+    {
+        part EngineDoor
+        {
+            model hood
+            {
+                file = boltz_930turbo_Hood,
+            }
+			anim Open
+			{
+				sound = VehicleHoodOpenSportsCar,
+				anim = DoorOpening,
+				rate = 1.5,
+			}
+
+			anim Close
+			{
+				sound = VehicleHoodCloseSportsCar,
+				anim = DoorOpening,
+				reverse = TRUE,
+				rate = 4.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorOpening,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorOpening,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+            category = bodywork,
+            area = Engine,
+
+            door
+            {
+            }
+
+            itemType = Base.930TurboHood,
+            mechanicRequireKey = true,
+            repairMechanic = true,
+
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 150,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+			}
+
+            lua
+			{
+				create = Vehicles.Create.Default,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.EngineDoor,
+			}
+        }
+    }
+}

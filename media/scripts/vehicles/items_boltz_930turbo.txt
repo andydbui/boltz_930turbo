@@ -45,4 +45,30 @@ module Base
         MechanicsItem = TRUE,
         WorldStaticModel = RearBumperWM,
     }
+
+    item 930TurboHood3
+    {
+        DisplayCategory = VehicleMaintenance,
+        ConditionMax = 100,
+        Weight = 11.0,
+        Type = Normal,
+        DisplayName = 911 Turbo Hood,
+        Icon = boltz_930turbo_placeholder,
+        MetalValue = 25,
+        VehicleType = 3,
+        MechanicsItem = TRUE,
+    }
+
+    item 930TurboTrunkDoor3
+    {
+        DisplayCategory = VehicleMaintenance,
+        ConditionMax = 100,
+        Weight = 12.0,
+        Type = Normal,
+        DisplayName = 911 Turbo Trunk Lid,
+        Icon = boltz_930turbo_placeholder,
+        MetalValue = 25,
+        VehicleType = 3,
+        MechanicsItem = TRUE, 
+    }
 }

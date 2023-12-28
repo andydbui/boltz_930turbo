@@ -4,4 +4,5 @@ IG_UI_EN = {
 	IGUI_VehiclePartFrontBumper = "Front Bumper",
 	IGUI_VehiclePartRearBumper = "Rear Bumper",
 	IGUI_VehiclePart930turboTrunk = "Trunk Storage",
+	IGUI_VehiclePart930Turbo_TrunkDoor = "Trunk Lid",
 }

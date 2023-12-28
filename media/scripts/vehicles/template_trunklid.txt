@@ -1,0 +1,110 @@
+module Base
+{
+    template vehicle 930Turbo_TrunkDoor
+    {
+        part TrunkDoor
+        {
+			model TrunkLid
+			{
+				file = boltz_930turbo_Trunk,
+			}
+            category = bodywork,
+            area = TruckBed,
+
+            door
+            {
+            }
+
+            itemType = Base.930TurboTrunkDoor,
+            mechanicRequireKey = false,
+            repairMechanic = true,
+
+			anim Open
+			{
+				sound = VehicleTrunkOpenSportsCar,
+				anim = DoorOpening,
+				rate = 1.0,
+			}
+
+			anim Close
+			{
+				sound = VehicleTrunkCloseSportsCar,
+				anim = DoorOpening,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Closed
+			{
+				anim = DoorOpening,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorOpening,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Lock
+			{
+				sound = LockVehicleDoorSportsCar,
+			}
+
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorSportsCar,
+			}
+
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedSportsCar,
+			}
+
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 150,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+                update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+        }
+    }
+}

@@ -1,15 +1,15 @@
-boltz = boltz or {};
+GOD = GOD or {};
 
-boltz.Commands = boltz.Commands or {};
+GOD.Commands = GOD.Commands or {};
 
-function boltz.Commands.setVehicleData(playerObj, args)
-    print("boltz.Commands.setVehicleData(" .. playerObj:getUsername() .. ", " .. args["_vehicleId"] .. ")");
+function GOD.Commands.setVehicleData(playerObj, args)
+    print("GOD.Commands.setVehicleData(" .. playerObj:getUsername() .. ", " .. args["_vehicleId"] .. ")");
 
     local vehicle = getVehicleById(args["_vehicleId"]);
 
     if vehicle
     then
-        local part = boltz:getMulePart(vehicle);
+        local part = GOD:getMulePart(vehicle);
 
         if part
         then
